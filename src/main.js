@@ -5,8 +5,17 @@ import App from './App'
 import VueRouter from 'vue-router'
 //tell vue to use the router
 Vue.use(VueRouter)
+//import hello component
+import Hello from './components/Hello'
+//import about component
+import About from './components/About'
+
 // define your routes
-const routes = [] //array of {}, representing a path. 
+const routes = [
+    { path: '/', component: Hello },
+    { path: '/about', component: About }
+] //array of {}, representing a path.
+
 
 // Create the router instance and pass the 'routes' option
 // You can pass in additional options here, but let's
